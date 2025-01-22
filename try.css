@@ -1,0 +1,133 @@
+@import url('https://fonts.googleapis.com/css2?family=Baloo+Bhai+2:wght@400..800&display=swap');
+
+body {
+    margin: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #FDF5E6; /* Warm off-white background */
+    min-height: 100vh;
+    background: linear-gradient(to right, #f8f8f8 , #808080 );
+}
+
+.container {
+    width: 1000px;
+    height: 600px;
+}
+.cardpar{
+    width: 100%;
+    height: 100%;
+    position: relative;
+    transform-style: preserve-3d;
+    transition: transform 0.6s ease;
+}
+.cardsign {
+      
+
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+    height: 100%;
+    border-radius: 32px;
+    overflow: hidden;
+    box-shadow: 0 4px 20px rgba(139, 69, 19, 0.15); /* Warmer shadow */
+position: relative;
+}
+
+
+.left-sidesign {
+    width: 50%;
+    background-color: #F8EAD8; /* Soft beige */
+    padding: 40px;
+    position: relative;
+  
+    background-size: 20px 20px;
+    background-position: 0 0, 0 10px, 10px -10px, -10px 0px;
+}
+
+.right-sidesign {
+    background-color: #A67C52; /* Earthy brown */
+    width: 50%;
+    padding: 40px;
+    background-image: url("data:image/svg+xml,%3Csvg width='20' height='20' viewBox='0 0 20 20' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath d='M0 0h20v20H0V0zm10 10l5-5H5l5 5z' fill='%23805D3F' fill-opacity='0.2'/%3E%3C/svg%3E");
+}
+
+.form {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.form button {
+    border: none;
+    color: white;
+    font-family: 'Baloo Bhai 2';
+    background-color: #5C4033; /* Rich brown */
+    font-weight: bold;
+    padding: 12px;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.form button:hover {
+    background-color: #8B4513;
+}
+
+ p {
+    font-family: 'Baloo Bhai 2';
+    font-weight: bold;
+    font-size: 50px;
+    text-align: center;
+    margin: 60px 0;
+    color: #5C4033; /* Rich brown */
+}
+ input {
+    padding: 12px;
+    border: 2px solid #DEB887; /* Burly wood */
+    border-radius: 8px;
+    background-color: #FFF8DC; /* Cornsilk */
+    font-family: 'Baloo Bhai 2';
+}
+
+.login-text {
+    text-align: center;
+    font-family: 'Baloo Bhai 2';
+    font-size: 14px;
+    color: #8B4513; /* Saddle brown */
+}
+
+.login-text a {
+    color: #A0522D; /* Sienna */
+    font-weight: bold;
+    text-decoration: none;
+}
+
+.login-text a:hover {
+    text-decoration: underline;
+}
+
+.logo {
+    background-color: #8B4513; /* Saddle brown */
+    color: #FDF5E6; /* Off-white */
+    padding: 4px 8px;
+    border-radius: 20px;
+    font-family: 'Baloo Bhai 2';
+    font-weight: bold;
+    display: inline-block;
+    font-size: 14px;
+  width: 50px;
+  height: 40px;
+    background-image: url("logo-removebg-preview.png");
+    background-size: cover;
+    background-repeat: no-repeat; /* Burly wood */
+}
+
+
+
+.dots{
+    display: flex;
+}
+.cardpar.flipped {
+    transform: rotateY(180deg);
+  }
